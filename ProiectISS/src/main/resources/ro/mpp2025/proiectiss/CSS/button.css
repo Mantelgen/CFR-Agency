@@ -1,0 +1,24 @@
+Button {
+    -fx-background-color: #093a94; /* Dark blue color */
+    -fx-text-fill: white; /* White text */
+
+
+    -fx-background-radius: 25px; /* Rounded corners */
+    -fx-border-color: #093a94; /* Dark blue border */
+    -fx-border-radius: 25px;
+    -fx-effect: innershadow(gaussian, #093a94, 10, 0.5, 0, 2); /* Button shadow effect */
+}
+
+/* Button hover effect */
+Button:hover {
+    -fx-background-color: #0a59c2; /* Slightly lighter blue */
+    -fx-background-radius: 25px;
+    -fx-border-color: #0a59c2; /* Matching border on hover */
+}
+
+/* Button pressed effect */
+Button:pressed {
+    -fx-background-color: #093a94; /* Dark blue */
+    -fx-background-radius: 25px;
+    -fx-border-color: #093a94;
+}

@@ -1,0 +1,37 @@
+.button {
+    -fx-background-color: linear-gradient(#093a94, #0a59c2); /* Dark blue to light blue gradient */
+    -fx-text-fill: white; /* White text */
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 8px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 30px; /* Rounded corners for a soft look */
+    -fx-border-color: #093a94; /* Dark blue border for contrast */
+    -fx-border-radius: 30px;
+    -fx-padding: 10px 20px; /* Padding for a comfortable click area */
+    -fx-effect: dropshadow(gaussian, #093a94, 8, 0.5, 0, 2); /* Soft drop shadow */
+    -fx-cursor: hand; /* Hand cursor to indicate interactivity */
+}
+
+/* Search button hover effect */
+.button:hover {
+    -fx-background-color: linear-gradient(#0a59c2, #093a94); /* Reverse gradient for hover */
+    -fx-background-radius: 30px;
+    -fx-border-color: #0a59c2; /* Lighter blue border on hover */
+    -fx-border-radius: 30px;
+    -fx-effect: dropshadow(gaussian, #0a59c2, 10, 0.5, 0, 4); /* Slightly stronger shadow on hover */
+}
+
+/* Search button pressed effect */
+.button:pressed {
+    -fx-background-color: #093a94; /* Solid dark blue background when pressed */
+    -fx-border-color: #093a94; /* Matching border color when pressed */
+    -fx-background-radius: 30px;
+    -fx-effect: inset(0, 0, 10px, 0, #093a94); /* Inset effect for a pressed feel */
+}
+
+/* Styling for the search icon */
+.button .icon {
+    -fx-fill: white; /* Icon color */
+    -fx-font-size: 18px; /* Adjust icon size */
+    -fx-padding-right: 8px; /* Space between icon and text */
+}

@@ -1,0 +1,216 @@
+/* Root container style */
+AnchorPane {
+    -fx-background-color: #f5f5f5; /* Light background color */
+}
+
+/* Styling for the labels */
+
+
+/* Styling for buttons */
+
+
+/* Styling for text fields */
+TextField {
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 14px;
+    -fx-prompt-text-fill: #B0B0B0; /* Light gray for placeholder */
+    -fx-background-color: #ffffff; /* White background */
+    -fx-background-radius: 10px;
+    -fx-border-color: #dcdcdc; /* Light gray border */
+    -fx-border-radius: 10px;
+    -fx-pref-width: 180px;
+    -fx-pref-height: 30px;
+}
+ComboBox{
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 14px;
+    -fx-prompt-text-fill: #B0B0B0; /* Light gray for placeholder */
+    -fx-background-color: #ffffff; /* White background */
+    -fx-background-radius: 10px;
+    -fx-border-color: #dcdcdc; /* Light gray border */
+    -fx-border-radius: 10px;
+    -fx-pref-width: 180px;
+    -fx-pref-height: 30px;
+}
+
+.combo-box .list-cell {
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 14px;
+    -fx-padding: 4 10 4 10;
+}
+
+.combo-box .list-view {
+    -fx-background-radius: 10px;
+    -fx-border-color: #dcdcdc;
+}
+
+AutoCompleteTextField{
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 14px;
+    -fx-prompt-text-fill: #B0B0B0; /* Light gray for placeholder */
+    -fx-background-color: #ffffff; /* White background */
+    -fx-background-radius: 10px;
+    -fx-border-color: #dcdcdc; /* Light gray border */
+    -fx-border-radius: 10px;
+    -fx-pref-width: 180px;
+    -fx-pref-height: 30px;
+}
+
+PasswordField {
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 14px;
+    -fx-prompt-text-fill: #B0B0B0; /* Light gray for placeholder */
+    -fx-background-color: #ffffff; /* White background */
+    -fx-background-radius: 10px;
+    -fx-border-color: #dcdcdc; /* Light gray border */
+    -fx-border-radius: 10px;
+    -fx-pref-width: 180px;
+    -fx-pref-height: 30px;
+}
+
+/* Text field focus effect */
+TextField:focused {
+    -fx-border-color: #093a94; /* Dark blue border on focus */
+    -fx-background-color: #ffffff; /* Keeps white background */
+}
+
+
+
+/* Styling for the polygon */
+Polygon {
+    -fx-effect: dropshadow(gaussian, #093a94, 5, 0.5, 0, 0); /* Shadow effect for the polygon */
+}
+
+TableView {
+    -fx-background-color: #ffffff; /* White background */
+    -fx-border-color: #dcdcdc; /* Light gray border */
+    -fx-border-radius: 10px;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 14px;
+    -fx-effect: dropshadow(gaussian, #093a94, 5, 0.5, 0, 0); /* Shadow effect */
+}
+
+/* Styling for table columns */
+TableColumn {
+    -fx-alignment: CENTER; /* Center the text in columns */
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333; /* Dark text color */
+    -fx-padding: 5px;
+}
+
+/* Table header styling */
+.TableHeaderCell {
+    -fx-background-color: #093a94; /* Dark blue header */
+    -fx-text-fill: white; /* White text */
+    -fx-font-weight: bold;
+}
+
+/* Styling for the table row hover effect */
+TableRow:hover {
+    -fx-background-color: #f0f0f0; /* Light gray on hover */
+}
+
+/* Alternating row colors */
+TableView .table-row-cell:odd {
+    -fx-background-color: #f9f9f9; /* Light background for odd rows */
+}
+
+TableView .table-row-cell:even {
+    -fx-background-color: #ffffff; /* White background for even rows */
+}
+
+.table-view {
+    -fx-background-color: #ffffff; /* White background */
+    -fx-background-radius: 10px; /* Rounded corners for the table */
+    -fx-border-color: #dcdcdc; /* Light gray border */
+    -fx-border-width: 1px;
+    -fx-effect: dropshadow(gaussian, #093a94, 5, 0.5, 0, 2); /* Drop shadow effect */
+}
+
+/* Styling for table headers */
+.table-view .column-header {
+    -fx-background-color: white; /* Dark blue background for headers */
+    -fx-text-fill: white; /* White text */
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 14px;
+    -fx-padding: 10px;
+    -fx-alignment: center; /* Center the header text */
+    -fx-border-color: #dcdcdc; /* Light gray border */
+}
+
+/* Table rows */
+.table-view .table-row-cell {
+    -fx-background-color: #f9f9f9; /* Light gray background for rows */
+    -fx-border-color: #e0e0e0; /* Light gray border between rows */
+    -fx-border-width: 0 0 1px 0;
+}
+
+/* Table row hover effect */
+.table-view .table-row-cell:hover {
+    -fx-background-color: #e0e0e0; /* Light blue-gray when hovering */
+    -fx-cursor: hand; /* Change cursor on hover */
+}
+
+/* Table cell text */
+.table-view .table-cell {
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333; /* Dark gray text for cells */
+    -fx-padding: 10px; /* Padding for text inside cells */
+    -fx-alignment: center-left; /* Align text to the left */
+}
+
+/* Selected row styling */
+.table-view .table-row-cell:selected {
+    -fx-background-color: #0a59c2; /* Light blue background on row selection */
+    -fx-text-fill: white; /* White text when selected */
+}
+
+/* Styling for column resizing */
+.table-view .column-header .resize-line {
+    -fx-background-color: #dcdcdc; /* Light gray line for resizing */
+}
+
+/* Customizing the scroll bar */
+.scroll-bar {
+    -fx-background-color: #f0f0f0;
+    -fx-base: #dcdcdc;
+}
+
+/* Apply some padding for the table container */
+.table-view {
+    -fx-padding: 10px;
+}
+
+/* Styling for table's individual cells (for train details) */
+.table-view .train-column {
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 14px;
+    -fx-text-fill: #555555;
+    -fx-padding: 8px;
+    -fx-alignment: center;
+}
+
+.table-view .train-column:selected {
+    -fx-background-color: #0a59c2; /* Background color for selected train row */
+    -fx-text-fill: white;
+}
+
+/* Alternate row background color for better readability */
+.table-view .table-row-cell:odd {
+    -fx-background-color: #fafafa; /* Slightly different background for odd rows */
+}
+
+/* Styling for the table borders */
+.table-view .table-row-cell {
+    -fx-border-color: #f0f0f0; /* Light border between rows */
+    -fx-border-width: 0 0 1px 0; /* Border at the bottom */
+}
+
+/* Styling for the table scroll bar (if present) */
+.scroll-bar .track {
+    -fx-background-color: #f1f1f1; /* Light background for the track */
+}
+.scroll-bar .thumb {
+    -fx-background-color: #0a59c2; /* Blue thumb for the scroll bar */
+}

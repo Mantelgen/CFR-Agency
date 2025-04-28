@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" stylesheets="@CSS/login.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.mpp2025.proiectiss.Controller.LoginController">
+   <children>
+      <ImageView fx:id="logoImageView" fitHeight="150.0" fitWidth="150.0" layoutX="78.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="219.0" AnchorPane.leftAnchor="78.0" AnchorPane.rightAnchor="72.0" AnchorPane.topAnchor="31.0">
+         <image>
+            <Image url="@Images/CFR-Logo.png" />
+         </image></ImageView>
+      <Label layoutX="116.8" layoutY="159.0" prefHeight="21.0" prefWidth="61.0" text="LOGIN" textAlignment="CENTER" textFill="#093a94" AnchorPane.bottomAnchor="220.0" AnchorPane.leftAnchor="117.0" AnchorPane.rightAnchor="122.0" AnchorPane.topAnchor="159.0">
+         <font>
+            <Font name="Segoe UI Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Polygon fill="#093a94" layoutX="48.0" layoutY="25.0" points="706.7993774414062, -203.60003662109375, 405.19940185546875, -135.00003051757812, 405.19940185546875, -203.60003662109375" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="335.0" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="-0.4000244140625" AnchorPane.topAnchor="0.20001220703125" />
+      <Button fx:id="loginButton" layoutX="90.0" layoutY="287.0" mnemonicParsing="false" onAction="#onClickLogin" prefHeight="30.0" prefWidth="125.0" text="Login" AnchorPane.bottomAnchor="83.39999999999998" AnchorPane.leftAnchor="90.0" AnchorPane.rightAnchor="88.4" AnchorPane.topAnchor="287.0" />
+      <TextField fx:id="usernameField" layoutX="62.0" layoutY="201.0" promptText="Username" AnchorPane.bottomAnchor="169.4" AnchorPane.leftAnchor="62.0" AnchorPane.rightAnchor="62.0" AnchorPane.topAnchor="201.0" />
+      <Button layoutX="114.0" layoutY="335.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" text="Sign in" AnchorPane.bottomAnchor="36.19999999999999" AnchorPane.leftAnchor="114.0" AnchorPane.rightAnchor="110.0" AnchorPane.topAnchor="335.0" />
+      <Text layoutX="130.0" layoutY="389.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CFR. SA 2025">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Text>
+      <PasswordField fx:id="passwordField" layoutX="59.0" layoutY="241.0" promptText="Password" />
+   </children>
+</AnchorPane>
